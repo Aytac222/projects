@@ -1,0 +1,139 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(224, 192, 192);
+
+}
+.top-wrapper{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(71, 71, 71) ;
+}
+ul {
+    background: rgb(71, 71, 71);
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+li{
+    background: rgb(71, 71, 71);
+    display: block;
+    float: left;
+    padding: 20px 50px;
+    position: relative;  
+}
+ul li a,ul li ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    font-style: bold;
+}
+ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+ul li:hover >ul{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+ul li ul li{
+    clear: both;
+    width: 100%;
+}
+ul li ul li:hover{
+    background-color: rgb(145, 145, 145);
+    border-bottom: 2px solid white;
+}
+ul li:hover{
+    background-color: rgb(145, 145, 145)
+}
+ul li ul li ul{
+    visibility: hidden;
+    opacity: 0;
+    
+    margin-top: -40px;
+    left: 247px;
+    display: none;
+}
+ul li ul li ul li:hover{
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+.search{
+    margin-top: 20px;
+    margin-left: 150px;
+    width: 280px;
+    height: 30px;
+    background-color: white;
+    border-radius: 30px;
+}
+.search i{
+    position: absolute;
+    color: #777;
+    margin-top: 4px;
+    margin-left: 5px;
+}
+.search input{
+   margin-top: 3px;
+    margin-left: 27px;
+    width: 220px;
+    height: 20px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+}
+.img{
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 400px;
+}
+h2{
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 55px;
+    text-shadow: 3px 3px 2px rgb(155, 38, 38);
+}
+.rev h2{
+    margin-top: 10px;
+    color: rgb(172, 59, 74);
+}
+.huda h2{
+    margin-left: 25px;
+    margin-top: 7px;
+    color: rgb(190, 25, 94);
+}
+.kyle h2{
+    margin-left:90px;
+    margin-top: 10px;
+    color: rgb(190, 25, 94);
+}
+.line1{
+    margin-top: 0;
+    width: 100%;
+    height: 20px;
+    background-color: white;
+}
+ @media screen and (max-width:800px) and (min-width:500px){
+     .img{
+            width: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            height: 200px;
+     }
+     h2{
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        font-size: 25px;
+        text-shadow: 3px 3px 2px rgb(155, 38, 38);
+    }
+ }
